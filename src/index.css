@@ -1,0 +1,243 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 8px;
+}
+
+.wrapper-input {
+  min-height: 402px;
+  border-radius: 20px;
+  width: 260px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  background: #d45657;
+  color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0px auto 35px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  font-weight: normal;
+}
+
+.input-field {
+  margin-top: 30px;
+  position: relative;
+}
+
+.alert-info {
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  color: rgb(255, 230, 100);
+}
+
+.send-bag {
+  font-size: 1.2rem;
+  background: #e07f79;
+  margin: 50px auto 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.white {
+  position: relative;
+}
+
+.circle-field {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  height: 80px;
+  width: 300px;
+  background: #ffefef;
+  border-radius: 50% 50% 0 0; 
+}
+
+.block-field {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  height: 190px;
+  width: 300px;
+  background: #ffefef;
+}
+
+.show-field {
+  margin-bottom: 45px;
+}
+.money-field {
+  text-align: center;
+}
+
+.list-field {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 -20px;
+  z-index: 1;
+  color: rgb(160, 89, 89);
+  height: 210px;
+  overflow: auto;
+}
+
+.bag-item {
+  box-sizing: border-box;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.item-name, .item-money, .item-rest {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.item-isMax {
+  display: inline-block;
+}
+
+/* 动画 */
+.animate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  bottom: 0;
+  background: #bd4a43;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.mask1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  width: 300px;
+  height: 80px;
+  background: #d45657;
+}
+
+.change1 {
+  animation: heightChange1 0.5s ease-out forwards 1s;
+}
+
+@keyframes heightChange1 {
+  0% {
+    height: 80px;
+  }
+  50% {
+    height: 20px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+.hide {
+  animation: visibleChange 0.2s ease-in-out 1.5s forwards;
+}
+
+@keyframes visibleChange {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.mask2 {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  border-radius: 0 0 50% 50%;
+  background: #d45657;
+}
+
+.change {
+  animation: heightChange 1s ease-in forwards;
+}
+
+@keyframes heightChange {
+  0% {
+    height: 200px;
+  }
+  50% {
+    height: 220px;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+.open {
+  cursor: pointer;
+  position: absolute;
+  top: 240px;
+  left: calc(50% - 40px);
+  font-size: 30px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: black;
+  background: #fedd98;
+  border-radius: 40px;
+  animation: myrotate 1.5s ease-in-out infinite;
+}
+
+@keyframes myrotate {
+  0% {
+    transform:rotateY(0deg);
+  }
+  50% {
+    transform:rotateY(180deg);
+  }
+  100% {
+    transform:rotateY(0eg);
+  }
+}
